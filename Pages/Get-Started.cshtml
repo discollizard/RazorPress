@@ -1,0 +1,33 @@
+@page
+@model GetStartedModel
+@{
+    ViewData["Title"] = "Get started";
+}
+
+<div>
+    <!-- bro pls find a catchier phrase for this one below -->
+    <h1 class="display-3">Let's forge your vision</h1>
+    <form action="/spawn-skeleton" method="post">
+        <div>
+            <label for="website_name">Website name</label>
+            <input type="text" name="website_name" id="website_name">
+        </div>
+        <div>
+            <label for="database_name">Database name</label>
+            <input type="text" name="database_name" id="database_name">
+        </div>
+        <div>
+            <label for="username">Database username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Database password</label>
+            <input type="text" name="password" id="password">
+        </div>
+        <div>
+            <label for="tabs">Tabs (Separated by comma)</label>
+            <input type="text" name="tabs" id="tabs" placeholder="Eg: Home,Posts,News,Join us...">
+        </div>
+        <button type="submit">Generate</button>
+    </form>
+</div>
